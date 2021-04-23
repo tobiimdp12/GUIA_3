@@ -1,5 +1,7 @@
 package com.company.Ejercicio_1;
 
+import com.company.Ejercicio_2.Estudiante;
+
 public class Cilindro extends Circulo{
     public double altura=1.0f;
 
@@ -12,6 +14,7 @@ public class Cilindro extends Circulo{
     {
         super(radio,color);
         this.altura=altura;
+
     }
     @Override
     public double calcularArea() {
