@@ -4,14 +4,16 @@ import com.company.Ejercicio_1.Cilindro;
 
 import com.company.Ejercicio_2.Estudiante;
 import com.company.Ejercicio_2.miembrosStaff;
-
+import com.company.Ejercicio_3.Circulo;
+import com.company.Ejercicio_3.Cuadrado;
+import com.company.Ejercicio_3.Rectangulo;
 
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-
+        System.out.println("------------------Ejercicio 1-----------------------");
         Cilindro cilindro=new Cilindro();
 
         cilindro.mostrarValores();
@@ -23,7 +25,7 @@ System.out.println("\n----------------- \n");
         System.out.println(cilindro2.toString());
         cilindro2.mostrarValores();
 
-        System.out.println("Ejercicio 2");
+        System.out.println("------------------Ejercicio 2-----------------------");
         Estudiante est=new Estudiante("tob","selva","TOBI","eyy",2,3444,"programacion");
         Estudiante est_2=new Estudiante("tobias","ruiz","tobias","ess",24,222,"derecho");
         Estudiante est_3=new Estudiante("tomas","fafafa","tomas","edsd",1,323,"economia");
@@ -49,6 +51,14 @@ System.out.println("\n----------------- \n");
         System.out.println("el ingreso que persive la escuela con las cuotas es de "
                 + sumarIngresoCuotas(listadoEyM));
 
+        System.out.println("------------------Ejercicio 3-----------------------");
+        Circulo circulo=new Circulo("blue",2);
+        Rectangulo rectangulo=new Rectangulo("red",2,4);
+        Cuadrado cuadrado=new Cuadrado(2,4);
+
+        System.out.println(circulo.toString());
+        System.out.println(rectangulo.toString());
+        System.out.println(cuadrado.toString());
     }
 //preguntar como se representa esto en el UML (EL FILE MAIN)
     public static void recorrerArray(Object arr[])
